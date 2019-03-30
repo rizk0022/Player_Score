@@ -1,0 +1,108 @@
+body , html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    font-family: Georgia;
+}
+h5 {
+    font-family: "Times New Roman";
+}
+.row-container {
+    display: table;
+}
+
+body{
+    background: LightGray;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.row {
+    display: table-row;
+}
+
+.row header, .row footer{
+    text-align: center;
+    overflow: hidden;
+    background: #AFB2BF;
+}
+
+.fill-row {
+    display: table-row;
+    height: 100%;
+    width: 100%;
+}
+
+.fill-row article{
+    height: 100%;
+}
+
+.fill-row iframe {
+    background: snow;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*https://www.w3schools.com/html/html_lists.asp*/
+ul {
+    list-style-type: none;/*no bulletins*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*no scroll bars*/
+    background-color: snow;
+}
+
+li {
+    float: left;/*no left alignment*/
+}
+
+li a , .dropbtn{/*hyper link in list*/
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+.dropbtn {
+    font-size: 18px;
+    font-family: Georgia;
+}
+li a:hover, .dropdown:hover .dropbtn {/*hyper link hover*/
+     background-color: #eef975;
+    cursor: pointer;
+  
+}
+.dropdown-content a:hover {
+     background-color: #A8B8DE;
+    cursor: pointer;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    min-width: 0 auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
